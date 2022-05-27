@@ -1,6 +1,6 @@
 FROM alpine
-# ARG USER=${USER}
-# ARG PASSWD=${PASSWD}
+ARG USER
+ARG PASSWD
 RUN echo "Username is ${USER}"
 RUN echo "Password is ${PASSWD}"
 RUN export USER=${USER}
