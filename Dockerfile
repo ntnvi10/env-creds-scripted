@@ -1,7 +1,9 @@
 FROM alpine
-ARG USER
-ARG PASSWD
-RUN echo "Username is ${USER}"
-RUN echo "Password is ${PASSWD}"
-RUN export USER=${USER}
-RUN export PASSWD=${PASSWD}
+# ARG USER
+# ARG PASSWD
+# RUN echo "Username is ${USER}"
+# RUN echo "Password is ${PASSWD}"
+# RUN export USER=${USER}
+# RUN export PASSWD=${PASSWD}
+ENV USER=nitin
+ENV PASSWD=pass
