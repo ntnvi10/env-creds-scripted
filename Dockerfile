@@ -5,5 +5,5 @@ FROM alpine
 # RUN echo "Password is ${PASSWD}"
 # RUN export USER=${USER}
 # RUN export PASSWD=${PASSWD}
-ENV USER=nitin
-ENV PASSWD=pass
+ENV USER=${USER}
+ENV PASSWD=${PASSWD}
