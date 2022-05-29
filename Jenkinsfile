@@ -6,7 +6,7 @@ node {
         withCredentials([usernamePassword(credentialsId: 'nitin-creds', passwordVariable: 'NITIN_CREDS_PSW', usernameVariable: 'NITIN_CREDS_USR')]) {
             sh """ 
               echo "building a docker file"
-              docker build --build-arg USER=${NITIN_CREDS_USR} --build-arg PASSWD=${NITIN_CREDS_PSW} -t docker-image-nitin .
+              docker build --build-arg NITIN_CREDS_USR=${NITIN_CREDS_USR} --build-arg NITIN_CREDS_PSW=${NITIN_CREDS_PSW} -t docker-image-nitin .
             """
         }
     }
